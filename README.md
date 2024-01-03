@@ -93,6 +93,7 @@ Restaurants (Dimension)
 3)	Location_id
 4)	Cuisine
 5)	Year_of_establishment
+   
 Customers (Dimension)
 1)	Customer id
 2)	Customer name
@@ -100,27 +101,32 @@ Customers (Dimension)
 4)	Age
 5)	Location_id
 6)	Sign up date
+   
 Dishes (Dimension)
 1)	Dish id
 2)	Dish name
 3)	Dish type
+   
 Locations (Dimension)
 1)	Location_id(Pk)
 2)	City_id(Fk)
 3)	Location_name
 4)	Latitude
 5)	Longitude
+   
 Cities(dimension)
 1)	City_id(Pk)
 2)	City_name
 3)	State
 4)	Country
+   
 Dates(Dimension)
 1)	Date_time(PK)
 2)	DAY
 3)	MONTH
 4)	YEAR
 5)	WEEKDAY
+   
 ORDERS(fact)
 1)	Order_id(pk)
 2)	Customer_id(fk)
@@ -131,8 +137,8 @@ ORDERS(fact)
 7)	Restaurant_id(fk)
 8)	Cancelation_status
 9)	Amount
-10)	Delivered_time
-11)	Delivery_partner_id(Fk)
+10)Delivered_time
+11)Delivery_partner_id(Fk)
 
 
 SQL  queris be like:
